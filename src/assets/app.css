@@ -1,0 +1,115 @@
+body {
+  background: #b41448;
+  padding: 0;
+  margin: 0;
+}
+
+body, div, input, select {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.white-text {
+  color: white;
+}
+
+.light-text {
+  color: #fdd;
+}
+
+h1, h2 {
+  color: white;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+#app {
+  max-width: 480px;
+  padding: 14px;
+  margin: 0 auto;
+}
+
+.form {
+  background: white;
+  padding: 14px;
+  margin-left: -4px;
+  margin-right: -4px;
+  margin-bottom: 20px;
+  border: 1px solid #a70f41;
+  border-radius: 5px;
+}
+
+h1.form-header {
+  font-size: 18px;
+  padding: 0;
+  margin: 0 0 20px;
+  font-weight: normal;
+  color: black;
+}
+
+h2.form-header {
+  font-size: 17px;
+  padding: 0;
+  margin: 0 0 15px;
+  font-weight: normal;
+  color: #333;
+}
+
+
+/* animations */
+
+.burst-enter-active {
+  animation: burst-in .3s;
+}
+.burst-leave-active {
+  animation: burst-in .3s reverse;
+}
+
+@keyframes burst-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bounce-enter-active {
+  animation: bounce-in .4s;
+}
+.bounce-leave-active {
+  animation: bounce-in .4s reverse;
+}
+
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
