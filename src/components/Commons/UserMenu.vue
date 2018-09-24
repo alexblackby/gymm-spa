@@ -11,6 +11,9 @@
       </div>
       <el-dropdown-menu slot="dropdown">
         <el-dropdown-item :disabled="true">{{username}}</el-dropdown-item>
+        <el-dropdown-item command="settings" :divided="true">
+          Настройки
+        </el-dropdown-item>
         <el-dropdown-item command="logout" :divided="true">
           Выйти
         </el-dropdown-item>
@@ -27,6 +30,9 @@
     name: 'UserMenu',
     methods: {
       onCommand: function (command) {
+        if(command==='settings') {
+          window.location = '/settings'
+        }
         if(command==='logout') {
           this.$router.push({name:'logout'})
           window.location = '/logout'
